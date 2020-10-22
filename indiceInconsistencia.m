@@ -1,4 +1,4 @@
-function [qc] = indiceInconsistencia(M,ica)
+function [qc,ic] = indiceInconsistencia(M,ica)
 
    %M -> Matriz de comparação par a par
    %ica -> Indice de comparação aleatório, esse valor é tabelado,
