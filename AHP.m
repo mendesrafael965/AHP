@@ -19,7 +19,7 @@ function AHP()
     prio_expe=prioridades(experiencia)
     
     %Calacula o indice de inconsistencia
-    ic_expe = indiceInconsistencia(experiencia,0.52)
+    [qc_expe, ic_expe] = indiceInconsistencia(experiencia,0.52)
 
     disp('Matriz de comparação de pares, critério educacao');
 
@@ -32,7 +32,7 @@ function AHP()
     prio_educ=prioridades(educacao)
     
     %Calacula o indice de inconsistencia
-    ic_educ =  indiceInconsistencia(educacao,0.52)
+    [qc_educ, ic_educ] =  indiceInconsistencia(educacao,0.52)
 
     disp('Matriz de comparação de pares, critério carisma');
 
@@ -45,7 +45,7 @@ function AHP()
     prio_cari=prioridades(carisma)
     
     %Calacula o indice de inconsistencia
-    ic_cari = indiceInconsistencia(carisma,0.52)
+    [qc_cari, ic_cari] = indiceInconsistencia(carisma,0.52)
 
     disp('Matriz de comparação de pares, critério idade');
 
@@ -58,7 +58,7 @@ function AHP()
     prio_idad=prioridades(idade)
     
     %Calacula o indice de inconsistencia
-    ic_cari = indiceInconsistencia(idade,0.52)
+    [qc_cari, ic_cari] = indiceInconsistencia(idade,0.52)
 
     disp('Matriz de comparação de pares, critérios em relacao ao objetivo');
 
@@ -72,7 +72,7 @@ function AHP()
     prio_crit_obje=prioridades(criterios)
     
     %Calacula o indice de inconsistencia
-    ic_crit = indiceInconsistencia(criterios,0.89)
+    [qc_crit, ic_crit] = indiceInconsistencia(criterios,0.89)
     
     %prioridades global
     %Matriz de prioridades composta pelos vetores de prioridadess
